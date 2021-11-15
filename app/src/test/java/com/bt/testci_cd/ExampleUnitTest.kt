@@ -14,4 +14,11 @@ class ExampleUnitTest {
     fun addition_isCorrect() {
         assertEquals(4, 2 + 2)
     }
+
+    @Test
+    fun checkIfStringsAreEqual() {
+        val b = "1234"
+        val a = "1234"
+        assertSame(b, a)
+    }
 }
